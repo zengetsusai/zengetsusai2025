@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>前月祭 - 早稲田大学所沢キャンパス祭</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta http-equiv="content-script-type" content="text/javascript" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+            background-color: #0b5914; /* メインカラーをボディ背景に */
+        }
+        /* コンテンツエリアの背景色を白にすることで、緑の背景とのコントラストを出す */
+        .header-color-bg{
+            background-color: #FFF0F0; /* ヘッダーの背景色 */
+        }
+        .content-area-bg {
+            background-color: #FFF0F0; /* コンテンツエリアの背景色 */
+        }
+        .main-color-bg {
+            background-color: #0b5914;
+        }
+        /* ヘッダーのテキスト色を調整 */
+        .header-text-color {
+            color: #333; /* ヘッダー背景色に合う濃い色 */
+        }
+        /* メインカラー背景上のテキスト色 (ボタンなど) */
+        .main-color-text {
+            color: #FFF0F0;
+        }
+        /* メインカラー背景上のボーダー色 */
+        .main-color-border {
+            border-color: #FFF0F0;
+        }
+        /* h2のテキスト色はコンテンツエリアの背景色に合わせて調整 */
+        h2 {
+            color: #333; /* コンテンツエリアの背景が白なので、濃い色で視認性を確保 */
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="header-color-bg p-4 shadow-md rounded-b-lg">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <!-- ロゴとタイトルをグループ化して左寄せ -->
+            <div class="flex items-center mb-2 md:mb-0">
+                <!-- ロゴのプレースホルダー画像 -->
+                <img src="./images/logo.png" alt="前月祭ロゴ" class="h-20 w-20 rounded-full object-cover mr-4">
+                <h1 class="text-3xl font-bold header-text-color">前月祭2025</h1>
+            </div>
+            <!-- ナビゲーションを右寄せ -->
+            <nav>
+                <ul class="flex flex-wrap justify-center md:justify-end space-x-4">
+                    <li><a href="#about" class="hover:underline text-lg header-text-color">前月祭とは</a></li>
+                    <li><a href="#events" class="hover:underline text-lg header-text-color">各企画</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto p-4 md:p-8">
+        <!-- Hero Section -->
+        <section class="content-area-bg p-6 rounded-lg shadow-lg text-center mb-12">
+            <!-- 前月祭のロゴ画像 -->
+            <img src="./images/小見出しを追加 (2).png" alt="前月祭のロゴ" class="w-full h-auto rounded-lg">
+            <p class="text-xl text-gray-700 leading-relaxed font-semibold">
+                早稲田大学所沢キャンパス祭実行委員では、前月祭としてエリア各所で楽しいイベントを開催いたします。
+            </p>
+        </section>
+
+        <!-- About Zengetsusai -->
+        <section id="about" class="mb-12 content-area-bg p-6 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-bold mb-4 border-b-2 border-gray-300 pb-2">前月祭の意義と目的</h2>
+            <img src="./images/zengetsusaizentai.jpg" alt="前月祭全体写真">
+            <div class="space-y-4 text-gray-700">
+                <p class="text-lg">
+                    前月祭は、以下の2つの大きな意義を持っています。
+                </p>
+                <ul class="list-disc list-inside text-lg space-y-2 pl-4">
+                    <li>とこ祭委員の意欲の増進と、とこ祭の周知</li>
+                    <li>地域の人とのつながりや交流、所沢を盛り上げること </li>
+                </ul>
+                <p class="text-lg">
+                    これらの意義に基づき、前月祭の目的は「早稲田大学所沢キャンパス祭を周知しその魅力を伝えるとともに、所沢市全体のさらなる活性化に貢献する」ことです。
+                </p>
+            </div>
+        </section>
+
+        <!-- Event Sections -->
+        <section id="events" class="mb-12">
+            <div class="content-area-bg p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">   
+            <h2 class="text-3xl font-bold text-center  border-b-2 border-gray-300 pb-1">各企画のご紹介</h2>
+            
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                <!-- ステージ企画 -->
+                <div class="content-area-bg p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">ステージ企画 @ エミテラス e-cube</h3>
+                     <img src="./images/emirerrace.jpg" alt="前月祭のロゴ" class="w-full h-auto rounded-lg">
+                    <p class="text-gray-700 mb-4">
+                        お笑い工房LUDO、早稲田大学落語研究会など、様々なサークルがパフォーマンスを披露します。西武鉄道と所沢市とのコラボグッズ販売もあります。
+                    </p>
+                    <a href="stage.html" class="inline-block main-color-bg text-white px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-colors duration-300">詳細を見る</a>
+                </div>
+
+                <!-- 参加型イベント -->
+             <div class="content-area-bg p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">   
+                 <h3 class="text-2xl font-semibold text-gray-800 mb-3">参加型イベント @ グランエミオ ノースプラザ</h3>
+                 <img src="./images/granemio.jpg" alt="前月祭のロゴ" class="w-full h-auto rounded-lg">
+                    <p class="text-gray-700 mb-4">
+                        お子さまから大人まで楽しめる体験型コンテンツをご用意。輪投げ、占い、脱出ゲームなど盛りだくさんです。
+                    </p>
+                    <a href="interactive.html" class="inline-block main-color-bg text-white px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-colors duration-300">詳細を見る</a>
+                </div>
+
+                <!-- コラボ出店＆体験講座 -->
+                <div class="content-area-bg p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">コラボ出店＆体験講座 @ クラッシィ所沢</h3>
+                    <img src="./images/classy.jpeg" alt="前月祭のロゴ" class="w-full h-auto rounded-lg">
+                    <p class="text-gray-700 mb-4">
+                        早稲田大学とタミー食品コラボの特製レモンジュース販売や、箱根駅伝で活躍した陸上部による走り方講座も開催！
+                    </p>
+                    <a href="collabo.html" class="inline-block main-color-bg text-white px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-colors duration-300">詳細を見る</a>
+                </div>
+
+                <!-- その他の見どころ -->
+                <div class="content-area-bg p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">その他の見どころ</h3>
+                    <p class="text-gray-700 mb-4">
+                        宝探しイベント、早稲田大学「怪獣同盟」のグリーティング、所沢市の公式キャラクターも登場します！
+                    </p>
+                    <a href="others.html" class="inline-block main-color-bg text-white px-6 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-colors duration-300">詳細を見る</a>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-color-bg text-white p-4 mt-8 rounded-t-lg">
+        <!-- <section id="recommends">
+            <h3>あなたへのおすすめイベント診断 🔎</h3>
+            <div id="quiz">
+                <p><b>Q1. 誰と来場しますか？</b></p>
+                <label><input type="radio" name="q1" value="alone" checked> 一人</label>
+                <label><input type="radio" name="q1" value="friends"> 友達と</label>
+                <label><input type="radio" name="q1" value="family"> 家族（子供連れ）と</label>
+
+                <p><b>Q2. どんな過ごし方が好きですか？</b></p>
+                <label><input type="radio" name="q2" value="watch" checked> じっくり鑑賞したい</label>
+                <label><input type="radio" name="q2" value="active"> 体験したり参加したい</label>
+                <label><input type="radio" name="q2" value="gourmet"> 美味しいものを食べたい</label>
+            </div>
+            <button id="diagnose-btn">診断する</button>
+        </section> -->
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 早稲田大学所沢キャンパス祭 前月祭実行委員会</p>
+        </div> 
+    </footer>
+</body>
+<!-- <script>
+    let themeBtn = document.querySelector('#btn');
+
+    themeBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-theme')
+        if(themeBtn.textContent === 'ダークモードにする'){
+            themeBtn.textContent = 'ライトモードにする'
+        } else {
+            themeBtn.textContent = 'ダークモードにする';
+        }
+    })
+    let eventDetails = {
+        stage: {
+            title: 'ステージ企画 @ エミテラス e-cube',
+            description: 'お笑い工房LUDO、早稲田大学落語研究会など、様々なサークルがパフォーマンスを披露します。西武鉄道と所沢市とのコラボグッズ販売もあります。熱気あふれるパフォーマンスをお楽しみください！',
+            // ポップアップ用の詳細情報を追加
+            detail: `熱気あふれるパフォーマンスをお楽しみください！
+
+            ■出演団体（一部）
+            ・お笑い工房LUDO
+            ・早稲田大学落語研究会
+            ・その他、多数のサークルが出演予定！
+
+            西武鉄道や所沢市とのコラボグッズ販売も行います。`
+        },
+        workshop: {
+            title: '参加型イベント @ グランエミオ ノースプラザ',
+            description: 'お子さまから大人まで楽しめる体験型コンテンツをご用意。輪投げ、占い、脱出ゲームなど盛りだくさんです。家族や友達と一緒に思い出を作りましょう。',
+            detail: `家族や友達と一緒に思い出を作りましょう。
+
+            ■体験コンテンツ
+            ・輪投げ
+            ・占い
+            ・ミニ脱出ゲーム
+
+            小さなお子様から大人まで、誰もが楽しめる企画が盛りだくさんです。`
+        },
+        collabo: {
+            title: 'コラボ出店＆体験講座 @ クラッシィ所沢',
+            description: '早稲田大学とタミー食品コラボの特製レモンジュース販売や、箱根駅伝で活躍した陸上部による走り方講座も開催！',
+            detail: `ここでしか味わえないグルメと体験をお見逃しなく！
+
+            ■フード＆ドリンク
+            ・早稲田大学×タミー食品 特製レモンジュース
+            ・フランクフルト など
+
+            ■体験講座
+            ・早稲田大学競走部による走り方講座
+            箱根駅伝で活躍した選手から直接指導を受けられる貴重な機会です。`
+        },
+        other: {
+            title: 'その他の見どころ',
+            description: '宝探しイベント、早稲田大学「怪獣同盟」のグリーティング、所沢市の公式キャラクターも登場します！',
+            detail: `キャンパスのあちこちでサプライズが待っています！
+
+            ・豪華景品が当たる！？宝探しイベント
+            ・早稲田大学「怪獣同盟」による怪獣グリーティング
+            ・所沢市公式キャラクター「トコろん」も登場！
+
+            見かけたらぜひ声をかけてみてください。`
+        }
+    };
+
+    let modal = document.getElementById('modal');
+    let modalTitle = document.getElementById('modal-title');
+    let modalText = document.getElementById('modal-text');
+    let detailButtons = document.querySelectorAll('.detail-btn');
+    let closeButton = document.querySelector('.close-button');
+
+    detailButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            let eventKey = e.target.dataset.event;
+            let eventData = eventDetails[eventKey];
+            
+            if (eventData) {
+                modalTitle.textContent = eventData.title;
+                modalText.textContent = eventData.detail;
+                modal.style.display = 'block';
+            }
+        });
+    });
+
+    let closeModal = () => {
+        modal.style.display = 'none';
+    }
+    closeButton.addEventListener('click', closeModal);
+    window.addEventListener('click', (event) => {
+        if (event.target == modal) {
+            closeModal();
+        }
+    });
+
+    let diagnoseBtn = document.getElementById('diagnose-btn');
+
+    diagnoseBtn.addEventListener('click', () => {
+        let q1 = document.querySelector('input[name="q1"]:checked').value;
+        let q2 = document.querySelector('input[name="q2"]:checked').value;
+
+        let scores = { stage: 0, workshop: 0, collabo: 0, other: 0 };
+        
+        if (q1 === 'alone') { scores.stage += 2; scores.collabo += 1; }
+        if (q1 === 'friends') { scores.stage += 1; scores.workshop += 2; scores.other += 1; }
+        if (q1 === 'family') { scores.workshop += 2; scores.other += 2; }
+
+        if (q2 === 'watch') { scores.stage += 3; }
+        if (q2 === 'active') { scores.workshop += 2; scores.collabo += 1; scores.other += 1;}
+        if (q2 === 'gourmet') { scores.collabo += 3; }
+
+        let maxScore = -1;
+        let recommendedEventKey = '';
+        for (let key in scores) {
+            if (scores[key] > maxScore) {
+                maxScore = scores[key];
+                recommendedEventKey = key;
+            }
+        }
+        
+        let recommendedEvent = eventDetails[recommendedEventKey];
+        
+        modalTitle.textContent = '🎉 あなたへのおすすめは...';
+        modalText.textContent = recommendedEvent.title + "\n\n" + recommendedEvent.description;
+        modal.style.display = 'block';
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        let readMoreButtons = document.querySelectorAll('.read-more-btn');
+
+        readMoreButtons.forEach(button => {
+            button.addEventListener('click', (event) => {
+                let eventItem = event.target.parentNode;
+                let fullDesc = eventItem.querySelector('.full-desc');
+                let isHidden = fullDesc.style.display === 'none';
+                if (isHidden) {
+                    fullDesc.style.display = 'inline';
+                    button.textContent = '閉じる';
+                } else {
+                    fullDesc.style.display = 'none';
+                    button.textContent = '続きを読む';
+                }
+            });
+        });
+    });
+    </script> -->
+</html>
